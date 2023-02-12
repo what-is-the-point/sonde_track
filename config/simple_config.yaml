@@ -1,0 +1,9 @@
+main:
+  name: "trackd"
+  version: "1.0.0"
+  base_path: 'cwd'
+  observer:
+    name: "KJ4QLP_QTH"
+    lat: 37.1548050
+    lon: -80.5674639
+    alt: 572
