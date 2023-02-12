@@ -69,8 +69,10 @@ def on_message(msg):
     print("   Heading [deg]: {:3.3f}".format(msg['heading']))
     if 'temp' in msg.keys(): 
         print(" Temperature [C]: {:3.3f}".format(msg['temp']))
-    print("     Battery [V]: {:3.3f}".format(msg['batt']))
-    print("  Satellites [#]: {:d}".format(msg['sats']))
+    if 'batt' in msg.keys(): 
+        print("     Battery [V]: {:3.3f}".format(msg['batt']))
+    if 'sats' in msg.keys(): 
+        print("  Satellites [#]: {:d}".format(msg['sats']))
     print("OBSERVER INFO: {:s}".format(obs['name']))
     print("    Observer Loc:", obs['lat'], obs['lon'], obs['alt'])
     print("     Range  [km]: {:3.3f}".format(rae['rho']))
