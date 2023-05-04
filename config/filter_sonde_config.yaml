@@ -2,7 +2,7 @@ name: "filter_sonde"
 version: "1.0.0"
 in_path: "/home/zleffke/log/sonde/raw" #Path to Input RadioSonde log files
 out_path: "/home/zleffke/log/sonde/filtered" #Output path for filter logs
-format: "csv" #options include 'json, csv, orig'
+format: "orig" #options include 'json, csv, orig'
 export: True
 keep_list:
   - 'datetime'
